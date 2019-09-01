@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
-    "start" : "babel-node src/index.js"
+    "start" : "babel-node build/server.js"
   },
   "author": "Juan Saviñón",
   "license": "MIT",

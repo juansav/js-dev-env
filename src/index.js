@@ -1,16 +1,6 @@
-import express from 'express';
+import './index.css';
 
-const app = express();
+import numeral from 'numeral';
 
-const bookRouter = express.Router();
-
-bookRouter.route('/')
-  .get((req, res) => {
-    res.send("Hello with babel")
-  });
-
-app.use("/books", bookRouter);
-
-app.listen(8000, () => {
-  console.log('Running server with express...')
-})
+const courseValue = numeral(1000).format('$0,0.00');
+console.log(courseValue);
